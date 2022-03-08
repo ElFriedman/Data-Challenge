@@ -1,6 +1,15 @@
 # Data-Challenge
 Dartmouth Dali Lab Data Challenge Submission
 
+For part 1, I used Excel exclusively, while for part 2 I used R, which I had to teach myself.
+
+With Figure 1, I wanted to demonstrate how a nation's GDP is directly tied with their ability to control their currency's value, which in and of itself is a result of their economic power. The scatter plot was desirable to show each individual country, and I chose 2000-2008 so the currency values would be similar to the modern day and our expectations, but not bouncing aroudn after the financial crisis. The logarithm of exchange rate was necessary to account for the range of values, with some under 1 and others at roughly 10000. This nicely groups together currencies in similar bands of exchange rates as well.
+
+Figure 2 was more simple, demonstrating how the EU and OECD both contained less income disparity than other non-affiliated countries. The Gini index ranges from 0 to 100, with 0 representing perfect equality and 100 meaning absolute inequality. The date range was chosen to represent another section of time as opposed to the more recent data in figure 1.
+
+I focused specifically on one region, in this case East Asia, in Figure 3 in order to achieve a more cohesive time-series graph. While there was not one obvious pattern in the quintile distribution of wealth, there were noticeable phases of increasing and decreasing equality on the scale of years the dataset contained.
+
+When making Figure 4, I expected to find that in smaller countries, there would be more wealth contained by the top 5%. However, the result instead shows that there is no correlation between these two variables whatsoever, which in and of itself is an interesting observation. Wealth inequality occurs roughly equally in both small and large countries, it seems.
 
 
 After showing my ability to work with Big Data with the WIID data set, I thought demonstrating my ability to make good use of “tiny data” would better show my ability to effectively manipulate datasets rather than an ML model. While large datasets can be extremely useful in informing decision making, there are many times where we don’t have it is simply unfeasible or impossible to gather this much information, but instead we only have a small sample of data, what Karl Broman calls Tiny Data. In cases such as these, we can make use of a method known as Approximate Bayesian Computation (ABC). ABC relies upon being able to create a generative model that produces the same type of data you want to model. Once this is made, we sample from a prior distribution of parameters to simulate a dataset, and if it matches the actual data, you store the parameter values. This process is repeated a large amount of times until we are left with a posterior distribution, which represents the probability that each parameter set is the true prior. 
